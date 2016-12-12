@@ -1,0 +1,13 @@
+Download android wear app in device from google play 
+
+Open your command prompt and make sure both emulators are recognized with the following command
+
+-adb devices
+Output should be something like this:
+
+List of devices attached
+emulator-5554   device
+emulator-5556   device 
+if emulator-5556 is your phone emulator than just run this command
+
+-adb -s emulator-5556 -d forward tcp:5601 tcp:5601
